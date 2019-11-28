@@ -14,7 +14,7 @@ Jenkins, SonarQube and Git Install and Setup
 
 - หรือ <b>`brew install`</b>
 
-		brew install jenkins
+		brew install jenkins-lts
 
 - <b>`access`</b> [http://localhost:8080](http://localhost:8080) to show the initial Jenkins unlock screen:
 
@@ -23,7 +23,15 @@ Jenkins, SonarQube and Git Install and Setup
 - หน้านี้เจ้าตัว Jenkins จะถามหา Password เพื่อทำการ unlock วิธีการเอา Password มาให้ทำการเปิด Terminal ขึ้นมาแล้วใช้คำสั่งนี้
 <b>`sudo cat ตามด้วย path ที่เป็นตัวหนังสือสีแดง`</b>
 
-		sudo cat /Users/bugaboo/.jenkins/secrets/master.key
+		sudo cat /Users/bugaboo/.jenkins/secrets/initialAdminPassword
+
+- Start Jenkins
+
+		brew services start jenkins-lts
+
+- Restart Jenkins
+
+		brew services restart jenkins-lts
 
 # 2. SonarQube Installation
 
