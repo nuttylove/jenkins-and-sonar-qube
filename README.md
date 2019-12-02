@@ -33,8 +33,23 @@ Jenkins, SonarQube and Git Install and Setup
 
 		brew services restart jenkins-lts
 
-# 2. SonarQube Installation
+- Go to URL [http://localhost:8080/](http://localhost:8080/)
+
+# 2. Jenkins & Git
+
+- ให้ทำการ <b>Generate SSH key</b> โดยเป็น User ของ Jenkins วิธีก็คือให้เปิด Terminal ขึ้นมาแล้วทำการพิมพ์คำสั่งนี้ลงไป `sudo su jenkins` เพื่อเข้าสู่ User Jenkins แล้วตามด้วยคำสั่ง `ssh-keygen` เพื่อทำการสร้าง SSH key
+
+	- `sudo su jenkins-lts`
+
+	- `Password:xxxxxxxxx`
+
+	- `ssh-keygen`
+
+
+# 3. SonarQube Installation
 
 - ถ้ายังไม่มี SonarQube ให้ใช้ Docker ในการติดตั้ง
 
 		docker run -d --name sonarqube -p 9000:9000 -p 9092:9092 sonarqube
+
+	*** [Angular Fitbit = Jenkins + SonarQube](https://medium.com/polyglots-blog/angular-fitbit-jenkins-sonarqube-829cc6201469)
