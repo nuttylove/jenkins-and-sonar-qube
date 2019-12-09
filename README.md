@@ -35,6 +35,8 @@ Jenkins, SonarQube and Git Install and Setup
 
 - Go to URL [http://localhost:8080/](http://localhost:8080/)
 
+- [Setup Jenkins CI in 30 Minutes](https://mydeveloperplanet.com/2019/01/30/setup-jenkins-ci-in-30-minutes/)
+
 # 2. Jenkins & Git
 
 - ให้ทำการ <b>Generate SSH key</b> โดยเป็น User ของ Jenkins วิธีก็คือให้เปิด Terminal ขึ้นมาแล้วทำการพิมพ์คำสั่งนี้ลงไป `sudo su jenkins` เพื่อเข้าสู่ User Jenkins แล้วตามด้วยคำสั่ง `ssh-keygen` เพื่อทำการสร้าง SSH key
