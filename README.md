@@ -53,3 +53,7 @@ Jenkins, SonarQube and Git Install and Setup
 		docker run -d --name sonarqube -p 9000:9000 -p 9092:9092 sonarqube
 
 	*** [Angular Fitbit = Jenkins + SonarQube](https://medium.com/polyglots-blog/angular-fitbit-jenkins-sonarqube-829cc6201469)
+
+# 4. Setting up Continuous Integration With GitLab, Jenkins and SonarQube
+
+- [Continuous Integration Setup with GitLab, Jenkins and SonarQube](https://linuxhandbook.com/ci-with-gitlab-jenkins-and-sonarqube/)
