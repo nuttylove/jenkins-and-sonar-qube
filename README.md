@@ -62,9 +62,7 @@ Jenkins, SonarQube and Git Install and Setup
 
 			brew install sonar-scanner
 
-	- Go to project path
-
-			cd `to project path`
+	- cd to project path
 
 	- Scan project and update to server sonarqube
 
