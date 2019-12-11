@@ -103,3 +103,5 @@ Jenkins, SonarQube and Git Install and Setup
 - [Angular Fitbit = Jenkins + SonarQube](https://medium.com/polyglots-blog/angular-fitbit-jenkins-sonarqube-829cc6201469)
 
 - [Continuous Integration Setup with GitLab, Jenkins and SonarQube](https://linuxhandbook.com/ci-with-gitlab-jenkins-and-sonarqube/)
+
+- [ตรวจสอบคุณภาพของ Code ด้วย SonarQube](https://medium.com/@ifew/%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%93%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%82%E0%B8%AD%E0%B8%87-code-%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2-sonarqube-808fae32785a)
