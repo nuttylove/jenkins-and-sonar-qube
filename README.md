@@ -50,12 +50,58 @@ Jenkins, SonarQube and Git Install and Setup
 
 # 3. SonarQube Installation
 
-- ถ้ายังไม่มี SonarQube ให้ใช้ Docker ในการติดตั้ง
+- Create or config file `sonar-project.properties` in project
+
+- Install sonarqube and start server ผ่าน <b>Docker</b>
 
 		docker run -d --name sonarqube -p 9000:9000 -p 9092:9092 sonarqube
 
-	*** [Angular Fitbit = Jenkins + SonarQube](https://medium.com/polyglots-blog/angular-fitbit-jenkins-sonarqube-829cc6201469)
+- Install sonar-scanner ผ่าน <b>brew</b>
+
+	- Install service
+
+			brew install sonar-scanner
+
+	- Go to project path
+
+			cd `to project path`
+
+	- Scan project and update to server sonarqube
+
+			sonar-scanner -X
+
+			sonar-scanner -v
+
+			sonar-scanner
+
+- ถ้าใช้ NodeJS
+
+	- cd to your project
+
+	- Install package
+
+			npm i sonar-scanner --save-dev
+
+	- Setting script run in package.json
+
+			"scripts": {
+				...
+				"sonar-scanner": "sonar-scanner"
+			}
+
+	- Scan project and update to server sonarqube
+
+			npm run sonar-scanner
+
+- Go to `server sonarqube` URL [http://localhost:9000](http://localhost:9000)
+
+	- Username: <b>admin</b>
+
+	- Password: <b>admin</b>
+
 
 # 4. Setting up Continuous Integration With GitLab, Jenkins and SonarQube
+
+- [Angular Fitbit = Jenkins + SonarQube](https://medium.com/polyglots-blog/angular-fitbit-jenkins-sonarqube-829cc6201469)
 
 - [Continuous Integration Setup with GitLab, Jenkins and SonarQube](https://linuxhandbook.com/ci-with-gitlab-jenkins-and-sonarqube/)
